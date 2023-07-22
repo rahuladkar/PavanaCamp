@@ -150,6 +150,7 @@ section {
 
 section h2 {
   font-size: 2rem;
+  text-align: center;
 }
 
 section > p {
@@ -322,6 +323,10 @@ footer p {
   color: white;
 }
 
+footer .footer .link a i {
+  font-size: 1.7rem;
+}
+
 /* Campsite-Info  */
 
 .camping-info {
@@ -392,7 +397,7 @@ tbody tr:nth-child(even) {
 }
 
 /* Book Now Button Style */
-button {
+.BNbtn {
   --color: #0077ff;
   font-family: inherit;
   display: inline-block;
@@ -411,7 +416,7 @@ button {
   margin-top: 33px;
 }
 
-button::before {
+.BNbtn::before {
   position: absolute;
   content: "";
   background: var(--color);
@@ -421,17 +426,17 @@ button::before {
   border-radius: 50%;
 }
 
-button:hover {
+.BNbtn:hover {
   color: white;
 }
 
-button:before {
+.BNbtn:before {
   top: 100%;
   left: 100%;
   transition: 0.3s all;
 }
 
-button:hover::before {
+.BNbtn:hover::before {
   top: -30px;
   left: -30px;
 }
@@ -480,6 +485,7 @@ button:hover::before {
 
   .homepage .content .text {
     font-size: 17px;
+    width: 95%;
   }
 
   .content a {
@@ -533,6 +539,6 @@ button:hover::before {
     color: white;
   }
   .footer span {
-    margin: 0 10 0 6%;
+    margin: 0 10px 0 6px;
   }
 }

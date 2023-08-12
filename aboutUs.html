@@ -1,45 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords"
         content="pawna camping , pawna lake , pawna lake camping , camping in pune , camping near lonavala , pawna dam camping ,pavana camp , pavana lake camping , pavana lake camp , pawna camp , pawna lake tent , best camping in pawna lake , pawna tennt camping">
+
+    <meta property="og:title" content="Gallery | Pavana Lake Camping">
+    <meta property="og:description"
+        content="Pawna Lake Camping | Rahul Adkar | Experience the peaceful beauty of Pavana Lake Camping near Lonavala , Pune. Enjoy nature, have fun in the water, and make lasting memories in the Sahyadris mountains.">
+    <meta property="og:image" content="./images/pavana-camping-logo.png">
+    <meta property="og:url" content="https://www.pavanacamp.oin">
+    <meta property="og:type" content="website">
+
+    <title>Gallery | Pavana Lake Camping</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Fontawesome Link for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    <title>About | Pavana Lake Camping</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="./favicon_package_v0.16/site.webmanifest">
+    <link rel="mask-icon" href="./favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet">
     <style>
-        #about-img-png {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 5%;
+        .gallery {
+            margin-bottom: 1rem;
         }
 
-        #about-img-png img {
-            width: 90%;
-            height: 80%;
-            border-radius: 2rem;
-            margin-top: 3%;
-            box-shadow: 3px 5px 8px 8px rgba(79, 79, 79, 0.903);
+        div.gallery img:hover {
+            border: 10px solid #ddf0ff;
         }
 
-        #about {
-            margin-top: 2%;
+        div.gallery img {
+            width: 100%;
+            height: 20rem;
         }
 
-        #about h2 {
-            font-size: 3rem;
-        }
-
-        .row p {
+        div.desc {
+            padding: 15px;
             text-align: center;
+            margin-bottom: 1rem;
         }
 
-        .row h3 {
-            text-align: center;
+        .responsive {
+            padding: 0 1rem;
+            float: left;
+            width: 33.33%;
+            overflow: hidden;
+        }
+
+        .topSpace {
+            margin: 6rem 0 2rem 0;
+            color: #004741;
+        }
+
+        /* Responsive layout - makes a two column-layout instead of four columns */
+
+        @media only screen and (max-width: 768px) {
+            .responsive {
+                width: 49.99999%;
+                margin: 6px 0;
+            }
+
+            div.gallery {
+                border: 1px solid rgb(95, 94, 94);
+            }
+
+            div.gallery img {
+                width: 100%;
+                height: 15rem;
+            }
+
+        }
+
+        @media only screen and (max-width: 500px) {
+            .responsive {
+                width: 100%;
+            }
+
+            div.gallery img {
+                width: 100%;
+                height: 15rem;
+            }
         }
     </style>
 </head>
@@ -69,92 +115,108 @@
             </ul>
         </nav>
     </header>
-    <section class="about" id="about">
-        <h1>About Us</h1><br>
-        <p>Experience the ultimate camping retreat at Pavana Lake,<br> where nature's beauty embraces you. Unwind amidst
-            serene surroundings, <br>engage in exciting activities, and create unforgettable memories under the stars.
-        </p>
-        <div id="about-img-png">
-            <img src="./images/bg2.jpg" alt="">
+
+    <h1 class="topSpace">Pavana Camping Gallery</h1>
+    <div class="responsive">
+        <div class="gallery">
+            <a href="./images/tents.jpg">
+                <img src="./images/tents.JPG" alt="Cinque Terre" width="600" height="400">
+            </a>
+            <div class="desc">Pavana Lake Camping view with Tung Fort an tents.</div>
         </div>
-        <br><br>
-        <hr class="style-one">
-
-        <div class="row company-info">
-            <h3>Our Story</h3>
-            <p>Welcome to Pavana Lake Camping, a haven for nature enthusiasts and adventure seekers. Our journey began
-                with a vision to connect people with the wonders of nature amidst breathtaking landscapes. Evolving into
-                a destination of serene tranquility and thrilling adventures, we offer top-notch facilities,
-                eco-conscious practices, and safety commitment for an unforgettable camping experience under the stars.
-                Embrace the beauty of Pavana Lake with us.</p>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+            <a href="./images/camping.jpg">
+                <img src="./images/camping.jpg" alt="Mountains" width="600" height="400">
+            </a>
+            <div class="desc">The Customer reaching the Pavana Lake Camping.</div>
         </div>
-
-        <div class="row mission-vision">
-            <h3>Our Mission</h3>
-            <p>At Pavana Lake Camping, our mission is to create an exceptional outdoor experience that fosters a deep
-                connection with nature. We prioritize sustainability and eco-friendly practices to preserve the pristine
-                surroundings of Pavana Lake for future generations. Our dedicated team aims to provide a safe and
-                welcoming environment, ensuring campers leave with lasting memories and a renewed appreciation for the
-                wonders of the great outdoors. Through our passion for adventure, community, and environmental
-                stewardship, we inspire a profound love for nature and the joy of camping amidst Pavana Lake's
-                picturesque landscapes.</p>
-
-            <h3>Our Vision</h3>
-            <p>At Pavana Lake Camping, our vision is to be the epitome of harmony between human well-being and nature's
-                embrace. Through immersive experiences, sustainable practices, and exceptional hospitality, we inspire a
-                profound love for the natural world, leaving a lasting positive impact on our visitors' lives and
-                preserving its beauty for generations to come.</p>
-            <h3>Our Address</h3>
-            <p>Pavana Lake Camping is located amidst the scenic beauty of Pavana Lake in Maharashtra, India. <br>Our
-                address is : Pawna Lake Camping , near Sakal sant mandir ,<br> Ambegaon , maval, Pune - 410406</p>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+            <a href="./images/selfie.jpg">
+                <img src="./images/selfie.jpg" alt="Northern Lights" width="600" height="400">
+            </a>
+            <div class="desc">The Couple enjoying and capturing the memories.</div>
         </div>
-
-        <br><br>
-        <div id="HowToReach" class="mapouter">
-            <div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no"
-                    marginheight="0" marginwidth="0"
-                    src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Sakal sant mandir (सकल संत सदन मंदिर ) MFQM+V4C, Unnamed Road, Shindgaon, Maharashtra 410406&amp;t=h&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
-                    href="https://connectionsgame.org/">Connections Game</a></div>
-            <style>
-                .mapouter {
-                    position: relative;
-                    text-align: right;
-                    width: 100%;
-                    height: 400px;
-                }
-
-                .gmap_canvas {
-                    overflow: hidden;
-                    background: none !important;
-                    width: 100%;
-                    height: 400px;
-                }
-
-                .gmap_iframe {
-                    height: 400px !important;
-                }
-            </style>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+            <a href="./images/campsite.jpg">
+                <img src="./images/campsite.jpg" alt="Forest" width="600" height="400">
+            </a>
+            <div class="desc">The Evening view of Pavana Lake camping.</div>
         </div>
-        <br><br>
-    </section>
-    <footer class="footer">
-        <div class="Fcontainer">
-            <div class="mylogo">
-                <img src="./images/pavana-camping-logo.png" alt="My Logo">
-            </div>
-            <div class="footer-content">
-                <div class="social-links">
-                    <a href="https://wa.me/1234567890" target="_blank" class="social-link">WhatsApp</a>
-                    <a href="https://www.facebook.com/yourpagename" target="_blank" class="social-link">Facebook</a>
-                    <a href="https://www.instagram.com/pavana.camping/" target="_blank"
-                        class="social-link">Instagram</a>
-                    <a href="mailto:rahuladkar2@gmail.com" class="social-link">Email</a>
-                    <a href="tel:+917499947448" class="social-link">Phone</a>
-                </div>
-                <p>&copy; All rights are reserved by Rahul B. Adkar.</p>
-            </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a href="./images/garden.jpg">
+                <img src="./images/garden.jpg" alt="Mountains" width="600" height="400">
+            </a>
+            <div class="desc">The Pavana Lake Camping Garden with Tents.</div>
         </div>
-    </footer>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a href="./images/barbecue.jpeg">
+                <img src="./images/barbecue.jpeg" alt="Mountains" width="600" height="400">
+            </a>
+            <div class="desc">The NonVeg Barbecue Frying.</div>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+            <a href="./images/sunshine.JPG">
+                <img src="./images/sunshine.JPG" alt="Mountains" width="600" height="400">
+            </a>
+            <div class="desc">The best view of sunshine at Pavana Lake Camping.</div>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+            <a href="./images/tungFort.jpg">
+                <img src="./images/tungFort.jpg" alt="Mountains" width="600" height="400">
+            </a>
+            <div class="desc">The Tung Fort view from Pavana Lake Camping.</div>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+            <a href="./images/startril.jpeg">
+                <img src="./images/startril.jpeg" alt="Mountains" width="600" height="400">
+            </a>
+            <div class="desc">The Parking Place with Campsite Board.</div>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+            <a href="./images/evening.jpg">
+                <img src="./images/evening.jpg" alt="Mountains" width="600" height="400">
+            </a>
+            <div class="desc">The best Evening at Pavana Lake Caming.</div>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+            <a href="./images/evening2.jpg">
+                <img src="./images/evening2.jpg" alt="Mountains" width="600" height="400">
+            </a>
+            <div class="desc">The Tung Fort and Pavana Dam.</div>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+            <a href="./images/tentinGarden.jpg">
+                <img src="./images/tentinGarden.jpg" alt="Mountains" width="600" height="400">
+            </a>
+            <div class="desc">The Tents is place in the Garden.</div>
+        </div>
+    </div>
+
+    <!-- new -->
 
 </body>
 

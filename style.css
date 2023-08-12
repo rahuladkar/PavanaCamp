@@ -95,7 +95,7 @@ footer a:hover {
   height: 100vh;
   width: 100%;
   position: relative;
-  background: url("./images/home-bg.jpg");
+  background: url("./images/bg.jpg");
   background-position: center 65%;
   background-size: cover;
   background-attachment: fixed;
@@ -174,7 +174,7 @@ section > p {
 section .cards {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1200px;
+  max-width: 75rem;
   margin-top: 50px;
   padding: 0 10px;
   justify-content: space-between;
@@ -528,6 +528,8 @@ tbody tr:nth-child(even) {
 /* Safety and Rules */
 main {
   padding: 20px;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .safety-rules {
@@ -543,7 +545,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .safety-card {
@@ -630,7 +632,7 @@ main {
 
 /*------------------------------------- Media Query --------------------------------------*/
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 768px) {
   .navbar .all-links {
     position: fixed;
     left: -100%;
@@ -664,6 +666,10 @@ main {
 
   section > p {
     text-align: center;
+  }
+
+  section .cards {
+    max-width: 95%;
   }
 
   section .cards .card {
@@ -751,11 +757,24 @@ main {
   }
 
   .faq-container {
-    max-width: 90%;
+    max-width: 100%;
+  }
+
+  main {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .get-quotation-section {
+    flex-direction: column;
+  }
+  .left-side,
+  .right-side {
+    flex: 1;
   }
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 480px) {
   section .cards .card {
     width: 100%;
     margin-bottom: 30px;

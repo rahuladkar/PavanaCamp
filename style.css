@@ -19,7 +19,7 @@ a {
 
 h2 {
   color: #004741 !important;
-  filter: drop-shadow(0px 0px 10px);
+  filter: drop-shadow(0px 0px 22px);
 }
 
 header {
@@ -791,4 +791,10 @@ main {
   .footer span {
     margin: 0 10px 0 6px;
   }
+}
+
+/* css-------------------------------------------------------------- */
+
+section .cards .card:hover {
+  transform: scale(1.01);
 }

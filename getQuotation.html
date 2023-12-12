@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Quotation Form</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Add your responsive styles here */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #menu-toggler {
+            display: none;
+        }
+
+        #hamburger-btn {
+            display: none;
+            cursor: pointer;
+        }
+
+        #hamburger-btn svg {
+            fill: white;
+        }
+
+        .all-links {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .all-links li {
+            margin: 0;
+        }
+
+        #quotation-form {
+            max-width: 600px;
+            margin: 10px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        #quotation-form-inner {
+            display: grid;
+            gap: 15px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            outline: none;
+        }
+
+        button {
+            background-color: #008662;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: rgb(85, 85, 85);
+        }
+
+        .heading-q{
+            text-align: center;
+            margin-top: 7rem;
+            margin-bottom: 2rem;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h2 class="logo"><a href="index.html">Pavana Camping</a></h2>
+            <input type="checkbox" id="menu-toggler">
+            <label for="menu-toggler" id="hamburger-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z" />
+                </svg>
+            </label>
+            <ul class="all-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><a href="index.html#contact">Contact Us</a></li>
+                <li><a href="tel:+919226275758" target="_blank"><i class="fa-solid fa-phone"></i>
+                        &nbsp;&nbsp;&nbsp;Call Us</a>
+                </li>
+                <li><a class="whatsapp" href="https://wa.me/9226275758" target="_blank"><i
+                            class="fas fa-brands fa-whatsapp"></i>&nbsp;&nbsp;&nbsp;Whatsapp</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <h2 class="heading-q">Submit your requirements to get a quotation on WhatsApp</h2>
+
+    <div id="quotation-form">
+        <form id="quotation-form-inner" action="process_form.php" method="post"">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter Your Full Name" required>
+
+            <label for="check-in-date">Check-in Date:</label>
+            <input type="date" id="check-in-date" name="check-in-date" required>
+
+            <label for="num-people">Number of People:</label>
+            <input type="number" id="num-people" name="num-people" placeholder="Enter Number of Peoples" required>
+
+            <label for="group-type">Group Type:</label>
+            <select id="group-type" name="group-type" required>
+                <option value="Family">Select One</option>
+                <option value="Family">Family</option>
+                <option value="Couples">Couples</option>
+                <option value="Friends">Friends & Colleagues</option>
+                <option value="Corporate">Corporate</option>
+            </select>
+
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" name="mobile" placeholder="Enter Your Mobile Number" required>
+
+            <label for="email">Email:(If you want)</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com">
+
+            <button type="button" onclick="whatsapp();">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        function whatsapp()
+        {
+            var name = document.getElementById("name").value;
+            var check_date = document.getElementById("check-in-date").value;
+            var peoples = document.getElementById("num-people").value;
+            var g_type = document.getElementById("group-type").value;
+            var mobile = document.getElementById("mobile").value;
+            var email = document.getElementById("email").value;
+
+            var url = "https://wa.me/919226275758?text="+"PavanaCamping"+"Name : "+name+"%0a"+"Check In Date : "+check_date+"%0a"+"No. Of Peoples : "+peoples+"%0a"+"Group Type : "+g_type+"%0a"+"Mobile Number : "+mobile+"%0a"+"Email : "+email ;
+
+            window.open(url,'_blank').focus();
+        }
+    </script>
+
+</body>
+
+</html>

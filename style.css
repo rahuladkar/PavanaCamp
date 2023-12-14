@@ -13,7 +13,7 @@ body {
 }
 
 a {
-  text-decoration: none !important ;
+  text-decoration: none !important;
   color: #000;
 }
 
@@ -78,6 +78,7 @@ header a {
   height: 100%;
   padding: 20px 0;
 }
+
 footer a {
   margin: 0 0.5rem;
   text-decoration: none;
@@ -167,7 +168,7 @@ section h2 {
   text-align: center;
 }
 
-section > p {
+section>p {
   text-align: center;
 }
 
@@ -312,6 +313,7 @@ section .cards .card {
   text-decoration: none;
   color: #000;
 }
+
 /* -------------------------- Footer ------------------------- */
 .footer {
   background-color: #014038;
@@ -401,7 +403,8 @@ p {
 .table-container {
   max-width: 800px;
   margin: 0 auto;
-  overflow-x: auto; /* Enable horizontal scrolling for small screens */
+  overflow-x: auto;
+  /* Enable horizontal scrolling for small screens */
   box-shadow: -4px 4px 10px 3px #073730;
 }
 
@@ -485,10 +488,16 @@ tbody tr:nth-child(even) {
   margin: 0 auto;
   padding: 20px;
 }
+
 .faq-container h2 {
+  text-align: center;
+}
+
+.faq-container p {
   text-align: center;
   margin-bottom: 2rem;
 }
+
 .question {
   box-shadow: 3px 2px 3px #062921;
   cursor: pointer;
@@ -496,6 +505,7 @@ tbody tr:nth-child(even) {
   margin-bottom: 0.5rem;
   border: 2px solid rgb(0, 0, 0);
 }
+
 .answer {
   box-shadow: -3px 2px 3px #062921;
   cursor: pointer;
@@ -504,6 +514,7 @@ tbody tr:nth-child(even) {
   margin-bottom: 0.5rem;
   border: 2px solid black;
 }
+
 .question:hover {
   transform: translateY(-2px);
 }
@@ -549,7 +560,8 @@ main {
 }
 
 .safety-card {
-  flex: 1 1 100%; /* Equal width for cards, change 300px to adjust width */
+  flex: 1 1 100%;
+  /* Equal width for cards, change 300px to adjust width */
   max-width: 10rem;
   background-color: #fdfdfd;
   padding: 20px;
@@ -615,6 +627,7 @@ main {
   border-radius: 12px;
   width: 9.4rem;
 }
+
 #get-quotation-btn:hover {
   background-color: #006046f7;
 }
@@ -624,6 +637,7 @@ main {
   .get-quotation-section {
     flex-direction: column;
   }
+
   .left-side,
   .right-side {
     flex: 1;
@@ -644,7 +658,7 @@ main {
     transition: left 0.3s ease;
   }
 
-  .navbar #menu-toggler:checked ~ .all-links {
+  .navbar #menu-toggler:checked~.all-links {
     left: 0;
   }
 
@@ -662,9 +676,10 @@ main {
     content: url("./images/scheduleMobile.png");
     margin: 0.5rem 0 0 0.5rem;
   }
+
   /* Scedule end */
 
-  section > p {
+  section>p {
     text-align: center;
   }
 
@@ -708,6 +723,7 @@ main {
   .footer-content {
     padding: 1rem;
   }
+
   .social-links {
     flex-direction: row;
     flex-wrap: wrap;
@@ -734,6 +750,7 @@ main {
   .camping-info-container p {
     font-size: 16px;
   }
+
   /* ----------------------------- QNA ------------------------*/
   .s-container {
     max-width: 95%;
@@ -748,6 +765,7 @@ main {
   .contact .contact-details {
     margin: 0 0 0 2rem;
   }
+
   .left-side {
     padding: 0.5rem 0 0.1rem 0;
   }
@@ -768,6 +786,7 @@ main {
   .get-quotation-section {
     flex-direction: column;
   }
+
   .left-side,
   .right-side {
     flex: 1;
@@ -779,15 +798,18 @@ main {
     width: 100%;
     margin-bottom: 30px;
   }
+
   .footer {
     display: block;
   }
+
   .footer p {
     text-align: center;
     margin-top: 1rem;
     font-size: medium;
     color: white;
   }
+
   .footer span {
     margin: 0 10px 0 6px;
   }

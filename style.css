@@ -632,6 +632,12 @@ main {
   background-color: #006046f7;
 }
 
+#banner img{
+  border-radius: 2rem;
+  width: 60%;
+  box-shadow: 0 0  15px 10px rgb(100, 107, 107) ;
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
   .get-quotation-section {

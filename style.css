@@ -653,6 +653,12 @@ main {
 /*------------------------------------- Media Query --------------------------------------*/
 
 @media screen and (max-width: 768px) {
+  #banner img{
+    border-radius: 20px;
+    width: 90%;
+    box-shadow: 0 0  15px 10px rgb(100, 107, 107) ;
+  }
+
   .navbar .all-links {
     position: fixed;
     left: -100%;
